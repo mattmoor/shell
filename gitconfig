@@ -1,0 +1,7 @@
+[remote "minkoku"]
+        url = http://minkoku.default.svc/minkoku.git
+        fetch = +refs/heads/*:refs/remotes/minkoku/*
+
+[credential "http://minkoku.default.svc"]
+        username = minkoku
+        helper = "/go/src/github.com/mattmoor/shell/helper.sh"

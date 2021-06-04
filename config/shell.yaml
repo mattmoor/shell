@@ -1,0 +1,38 @@
+apiVersion: serving.knative.dev/v1
+kind: Service
+metadata:
+  name: shell
+spec:
+  template:
+    metadata:
+     annotations:
+       autoscaling.knative.dev/maxScale: "1"
+    spec:
+      serviceAccountName: minkoku
+      containers:
+      - image: task://kaniko
+        command: ["/bin/bash", "-c"]
+        args:
+        - |
+          tmux new-session -d -s mink-shell
+          gotty --permit-write --reconnect --title-format "mink shell" tmux attach-session -t mink-shell
+        env:
+        - name: DOCKER_CONFIG
+          value: /minkoku/
+        volumeMounts:
+        - name: minkoku-config
+          mountPath: /minkoku/
+        ports:
+        - containerPort: 8080
+      volumes:
+      - name: minkoku-config
+        # TODO: Simplify, this isn't really useful.
+        projected:
+          sources:
+          - secret:
+              name: minkoku
+              items:
+              - key: .mink.yaml
+                path: .mink.yaml
+              - key: config.json
+                path: config.json

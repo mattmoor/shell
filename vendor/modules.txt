@@ -1,0 +1,49 @@
+# github.com/NYTimes/gziphandler v1.1.1
+## explicit
+github.com/NYTimes/gziphandler
+# github.com/codegangsta/cli v1.22.5 => github.com/urfave/cli v1.19.1
+## explicit
+github.com/codegangsta/cli
+# github.com/creack/pty v1.1.11
+## explicit
+github.com/creack/pty
+# github.com/elazarl/go-bindata-assetfs v1.0.1
+## explicit
+github.com/elazarl/go-bindata-assetfs
+# github.com/fatih/structs v1.1.0
+## explicit
+github.com/fatih/structs
+# github.com/gorilla/websocket v1.4.2
+## explicit
+github.com/gorilla/websocket
+# github.com/hashicorp/errwrap v1.1.0
+## explicit
+github.com/hashicorp/errwrap
+# github.com/hashicorp/go-multierror v1.1.1
+## explicit
+github.com/hashicorp/go-multierror
+# github.com/kr/pty v1.1.8
+## explicit
+github.com/kr/pty
+# github.com/pkg/errors v0.9.1
+## explicit
+github.com/pkg/errors
+# github.com/yudai/gotty v2.0.0-alpha.3+incompatible
+## explicit
+github.com/yudai/gotty
+github.com/yudai/gotty/backend/localcommand
+github.com/yudai/gotty/pkg/homedir
+github.com/yudai/gotty/pkg/randomstring
+github.com/yudai/gotty/server
+github.com/yudai/gotty/utils
+github.com/yudai/gotty/webtty
+# github.com/yudai/hcl v0.0.0-20151013225006-5fa2393b3552
+## explicit
+github.com/yudai/hcl
+github.com/yudai/hcl/hcl
+github.com/yudai/hcl/json
+# golang.org/x/sys v0.0.0-20210414055047-fe65e336abe0
+## explicit
+golang.org/x/sys/internal/unsafeheader
+golang.org/x/sys/unix
+# github.com/codegangsta/cli => github.com/urfave/cli v1.19.1
